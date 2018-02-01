@@ -1,14 +1,28 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      Pico y placa Quito
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div>
+    <p>Por favor ingrese la placa del vehículo, la fecha y la hora en la que planea conducir</p>
+  </div>
+  <form ng-submit="this.checkPicoYPlaca(this.strPlate, this.movingDate)">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Placa del vehículo</ion-label>
+        <ion-input type="text" [(ngModel)]="this.strPlate" name="plate"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha y Hora de circulación</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY HH:mm" [(ngModel)]="this.movingDate" name="movingDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <button ion-button block color="primary" type="submit">Verificar</button>
+      </ion-item>
+    </ion-list>
+  </form>
 </ion-content>
