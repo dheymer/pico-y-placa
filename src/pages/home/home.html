@@ -10,19 +10,20 @@
   <div>
     <p>Por favor ingrese la placa del vehículo, la fecha y la hora en la que planea conducir</p>
   </div>
-  <form ng-submit="this.checkPicoYPlaca(this.strPlate, this.movingDate)">
-    <ion-list>
-      <ion-item>
-        <ion-label fixed>Placa del vehículo</ion-label>
-        <ion-input type="text" [(ngModel)]="this.strPlate" name="plate"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Fecha y Hora de circulación</ion-label>
-        <ion-datetime displayFormat="DD/MM/YYYY HH:mm" [(ngModel)]="this.movingDate" name="movingDate"></ion-datetime>
-      </ion-item>
-      <ion-item>
-        <button ion-button block color="primary" type="submit">Verificar</button>
-      </ion-item>
-    </ion-list>
-  </form>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Placa del vehículo</ion-label>
+      <ion-input type="text" [(ngModel)]="this.strPlate" name="plate"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha y Hora de circulación</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY HH:mm" [(ngModel)]="this.movingDate" name="movingDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <button ion-button block color="primary" type="submit" (click)="checkPicoYPlaca()">Verificar</button>
+    </ion-item>
+  </ion-list>
+  <div>
+    <img src="../../assets/imgs/pico-y-placa-quito.jpg" />
+  </div>
 </ion-content>
