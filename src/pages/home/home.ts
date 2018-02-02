@@ -1,3 +1,17 @@
+/**
+ * @name: "Pico y Placa" Algorithm
+ * @description: Project made to test Ionic Framework
+ * @version: 1.0
+ * @author: Dheymer Leon
+ *          Phone     : +593-98-7982998
+ *          Email     : dheymer@gmail.com
+ *          IG/TW     : @dheymer
+ *          Facebook  : @dheymerleonweb
+ *          Skype     : dheymer
+ *          LinkedIn  : linkedin.com/in/dheymer
+ *          DeviantArt: dheymer.deviantart.com
+ *          Website   : dheymer.000webhostapp.com
+ */
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import { DateTime } from 'ionic-angular/components/datetime/datetime';
